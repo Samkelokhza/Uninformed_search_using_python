@@ -8,7 +8,7 @@ def dfs(graph, start):
         if node not in visited:
             visited.append(node)
 
-            # Reverse to keep traversal order predictable
+            # Reversing the tree to keep traversal order predictable
             for neighbor in reversed(graph.get(node, [])):
                 if neighbor not in visited:
                     stack.append(neighbor)
