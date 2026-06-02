@@ -9,7 +9,7 @@ def bfs(graph, start):
 
         if node not in visited:
             visited.append(node)
-
+# Traversing all the Images and levels 
             for neighbor in graph.get(node, []):
                 if neighbor not in visited:
                     queue.append(neighbor)
